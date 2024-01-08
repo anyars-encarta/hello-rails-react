@@ -1,12 +1,25 @@
-import React from 'react';
+// Update Greeting.jsx to connect to the Redux store
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { fetchRandomMessage } from '../actions/randomMessageAction';
 
-const Message = () => {
+const Message = ({ message, fetchRandomMessage }) => {
+  useEffect(() => {
+    fetchRandomMessage();
+  }, [fetchRandomMessage]);
+
   return (
     <div>
       <h1>Welcome to My Random Message App!</h1>
-      {/* Add any other content or components you want to display */}
+      <p>{message}</p>
     </div>
   );
 };
 
-export default Message;
+const mapStateToProps = (state) => {
+  return {
+    message: state.randomMessageReducer.message,
+  };
+};
+
+export default connect(mapStateToProps, { fetchRandomMessage })(Message);
