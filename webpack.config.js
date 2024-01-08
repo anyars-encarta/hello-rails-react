@@ -7,10 +7,19 @@ module.exports = {
   entry: {
     application: "./app/javascript/application.js"
   },
+  module: {
+    rules: [
+      {
+        test: /\.(js)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
+    ],
+  },
   output: {
     filename: "[name].js",
-    sourceMapFilename: "[file].map",
-    chunkFormat: "module",
+    sourceMapFilename: "[name].js.map",
+    chunkFormat: "module", // added during app install but not included in tutorial
     path: path.resolve(__dirname, "app/assets/builds"),
   },
   plugins: [
