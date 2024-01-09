@@ -1,0 +1,14 @@
+<!-- app/views/pages/home.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your React App</title>
+</head>
+<body>
+  <div id="root">
+    <!-- This div will contain your React components -->
+    <%= react_component('App') %> <!-- This helper will mount your React App component -->
+  </div>
+  <%= javascript_pack_tag 'application' %>
+</body>
+</html>

@@ -7,7 +7,7 @@ export const fetchRandomMessage = () => {
         dispatch({ type: 'FETCH_RANDOM_MESSAGE', payload: response.data.message });
       })
       .catch((error) => {
-        // Handle error if needed
+        throw new Error('Error fetching data:', error);
       });
   };
 };

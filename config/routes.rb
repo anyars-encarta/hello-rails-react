@@ -6,11 +6,9 @@ Rails.application.routes.draw do
   # get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
-  # namespace :api do
-  #   get 'random_message', to: 'messages#random_message'
-  #   root to: 'messages#random_message'
-  # end
+  root 'pages#home'
 
-  root to: 'api/messages#random_message' # Directly set the root path to the controller action
+  namespace :api do
+    get 'random_message', to: 'messages#random_message'
+  end
 end

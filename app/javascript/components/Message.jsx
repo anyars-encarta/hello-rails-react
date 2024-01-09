@@ -1,4 +1,3 @@
-// Update Greeting.jsx to connect to the Redux store
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchRandomMessage } from '../actions/randomMessageAction';
