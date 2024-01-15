@@ -6,15 +6,12 @@ const Greeting = ({ randomMessage, fetchRandomMessage }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    console.log('Greeting component mounted. Fetching random message...');
-    
      const fetchMessage = async () => {
       try {
         await fetchRandomMessage();
         setIsLoading(false);
       } catch (error) {
-        console.error('Error fetching random message:', error);
-        setIsLoading(false);
+        throw new Error('Error fetching data:', error);
       }
     };
 
@@ -27,7 +24,7 @@ const Greeting = ({ randomMessage, fetchRandomMessage }) => {
 
     return (
        <div>
-         <h1>API Responded</h1>
+         <h1>Greeting of the day</h1>
          <p>{randomMessage}</p>
        </div>
      );

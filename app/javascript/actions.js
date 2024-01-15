@@ -1,7 +1,6 @@
 export const fetchRandomMessage = () => {
   return async (dispatch) => {
-    console.log('Fetching random message...');
-
+    
     try {
       const response = await fetch('/api/messages/random');
       if (!response.ok) {
@@ -9,11 +8,10 @@ export const fetchRandomMessage = () => {
       }
 
       const data = await response.json();
-      console.log('Received response:', data);
-
+      
       dispatch(setRandomMessage(data.message));
     } catch (error) {
-      console.error('Error fetching random message:', error);
+      throw new Error('Error fetching data:', error);
     }
   };
 };
