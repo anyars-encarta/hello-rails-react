@@ -38,7 +38,7 @@ const Greeting = ({ randomMessage, fetchRandomMessage }) => {
        <div class="greeting-content">
          <h1>Greeting of the day</h1>
          <p>"{randomMessage}"</p>
-         <h2>Greeting changes in: {countdown}</h2>
+         <h2>Greeting changes in: <span>{countdown}</span></h2>
        </div>
      );
    };

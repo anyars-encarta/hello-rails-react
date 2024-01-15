@@ -24,3 +24,7 @@
   text-align: justify;
   text-align: center;
 }
+
+.greeting-content span {
+  color: red;
+}
