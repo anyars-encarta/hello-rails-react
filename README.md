@@ -20,7 +20,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -65,14 +64,6 @@
 
 > - Display a Greetings using React frontend from a Rails backend
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-LIVE DEMO
-
-> Coming soon...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
