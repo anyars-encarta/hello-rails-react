@@ -1,17 +1,14 @@
 .loading {
-    text-align: center;
+  text-align: center;
+  font-size: 30px;
+  color: blueviolet;
 }
 
 .greeting-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.loading {
-    font-size: 30px;
-    color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .greeting-content h1 {
@@ -21,9 +18,9 @@
 }
 
 .greeting-content p {
-    font-size: 70px;
-    font-style: italic;
-    width: 80%;
-    text-align: justify;
-    text-align: center;
+  font-size: 70px;
+  font-style: italic;
+  width: 80%;
+  text-align: justify;
+  text-align: center;
 }
