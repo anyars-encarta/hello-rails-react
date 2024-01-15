@@ -8,4 +8,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "messages#index"
+
+  namespace :api do
+    get 'messages/random', to: 'messages#random_message'
+  end
 end
