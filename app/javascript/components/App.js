@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from '../store';
 import Greeting from './Greeting';
 
 const App = () => {
     return (
-      <Greeting />
+      <Provider store={store}>
+        <Greeting />
+      </Provider>
     );
 };
 
