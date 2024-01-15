@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { fetchRandomMessage } from '../actions';
+import '../../assets/stylesheets/greeting.css';
 
 const Greeting = ({ randomMessage, fetchRandomMessage }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,13 +20,13 @@ const Greeting = ({ randomMessage, fetchRandomMessage }) => {
   }, [fetchRandomMessage]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div class="loading">Loading...</div>;
   }
 
     return (
-       <div>
+       <div class="greeting-content">
          <h1>Greeting of the day</h1>
-         <p>{randomMessage}</p>
+         <p>"{randomMessage}"</p>
        </div>
      );
    };
