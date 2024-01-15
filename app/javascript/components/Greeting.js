@@ -22,14 +22,10 @@ const Greeting = ({ randomMessage, fetchRandomMessage }) => {
 
   useEffect(() => {
     if (countdown === 0) {
-      // Fetch new random message and reset countdown
       fetchRandomMessage();
       setCountdown(10);
     } else {
-      // Decrease countdown every second
       const timer = setTimeout(() => setCountdown(countdown - 1), 1000);
-
-      // Clear the timer when component unmounts
       return () => clearTimeout(timer);
     }
   }, [countdown, fetchRandomMessage]);
