@@ -7,9 +7,3 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-# Messages
-first_message = Message.create(message: 'It is an awesome day')
-second_message = Message.create(message: 'What a lovely day')
-third_message = Message.create(message: 'It feels good to be alive today')
-fourth_message = Message.create(message: 'There is no any day to be happy than today')
-fifth_message = Message.create(message: 'Give glory to the Almighty for today')
