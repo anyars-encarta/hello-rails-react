@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
-class Greeting extends Component {
-  render() {
+const Greeting = () => {
     return (
       <div>
         <h1>Hello World! Components Created</h1>
       </div>
     );
-  }
 }
 
 export default Greeting;
