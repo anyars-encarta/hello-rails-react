@@ -38,7 +38,7 @@
 <!-- INTRO -->
 # 📖 Greetings Rails project with Webpack <a name="about-project"></a>
 
-> Greetings Rails project with Webpack is a fun meet and greet project that uses both Rails backend and React with Webpack frontend. If you want to have endless greetings, here is your friend. The 
+> Greetings Rails project with Webpack is a fun meet and greet project that uses both Rails backend and React with Webpack frontend. If you want to have endless greetings, here is your friend. The greeting
 
 ## 🛠 Built With <a name="built-with"></a>
 1. Ruby
